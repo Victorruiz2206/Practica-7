@@ -1,0 +1,25 @@
+/*Ruiz Rodriguez Victor Lronel L 'Eglisse
+Ejercicio 3 
+Programa de calculadora*/
+
+#include <stdio.h>
+#include <math.h>
+
+void main()
+{ 
+    int op, num1, num2;
+    do
+    {
+        printf("Menu: \n");
+        printf("Escoje un a opcion. \n");
+        printf("1.- Suma \n"); 
+        printf("2.- Resta \n");
+        printf("3.- Muntipicacion \n");
+        printf("4.- Division \n");
+        printf("5.- Raiz \n");
+        printf("6.- Potencia \n");
+        printf("0.- Salida\n");
+        printf("opcion\n");
+        scanf("%i",%op);
+    }
+}
