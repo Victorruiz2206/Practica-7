@@ -1,25 +1,67 @@
-/*Ruiz Rodriguez Victor Lronel L 'Eglisse
+/*
+Practica 7
+HEBJ
 Ejercicio 3 
-Programa de calculadora*/
+Calculadora 
+*/
 
 #include <stdio.h>
 #include <math.h>
 
 void main()
 { 
-    int op, num1, num2;
-    do
-    {
-        printf("Menu: \n");
-        printf("Escoje un a opcion. \n");
-        printf("1.- Suma \n"); 
-        printf("2.- Resta \n");
-        printf("3.- Muntipicacion \n");
-        printf("4.- Division \n");
-        printf("5.- Raiz \n");
-        printf("6.- Potencia \n");
-        printf("0.- Salida\n");
-        printf("opcion\n");
-        scanf("%i",%op);
+    float a,b,res = 0;
+    int op;
+    printf("Seleccione un numero\n1:Suma\n2:Resta\n3:Multiplicacion\n4:Division\n5:Potenciación\n6:Raiz Cuadrada\n0:Fin\nOpcion: ");
+    scanf("%d", &op);
+    if(op>0 && op<6){
+        printf("Ingresa un numero: ");
+        scanf("%f",&a);
+        printf("Ingresa otro numero: ");
+        scanf("%f",&b);
+        
+    switch(op){
+        case 1: 
+        res = a+b;
+        printf("%.2f",res);
+        break;
+       
+        case 2: 
+        res = a-b;
+        printf("%.2f",res);
+        break;
+        
+        case 3: 
+        res = a*b;
+        printf("%.2f",res);
+        break;
+        
+        case 4: 
+        res = a/b;
+        printf("%.2f",res);
+        break;
+        
+        case 5: 
+        res = pow(a,b);
+        printf("%.2f",res);
+        break;
+        
+
     }
+    
+    }
+        if(op==6){
+        printf("Ingresa un numero: ");
+        scanf("%f",&a);
+        
+        switch(op){
+            case 6: 
+        res = sqrt(a);
+        printf("%.2f",res);
+        break;
+            
+        }
+        
+        }
+        
 }
